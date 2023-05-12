@@ -40,7 +40,7 @@ public class Archivio {
 
 	public List<Libro> ricercaPerAutore(String autore) {
 		return elementiCatalogo.stream().filter(e -> e instanceof Libro).map(e -> (Libro) e)
-				.filter(l -> l.autore.equals(autore)).collect(Collectors.toList());
+				.filter(l -> autore.equals(l.getAutore())).toList();
 	}
 
 //	NEL CORSO DELLO SVILUPPO DEL PROGETTO, HO CERCATO SOLUZIONI ONLINE PER

@@ -178,6 +178,8 @@ public class Main2 {
 				System.out.println("Vuoi modificare un libro o una rivista? (1 per libro, 2 per rivista)");
 				int sceltaModifica = scanner.nextInt();
 				scanner.nextLine();
+
+				// MODIFICO I LIBRI
 				if (sceltaModifica == 1) {
 					System.out.print("Inserisci il codice ISBN (ID) del libro da modificare: ");
 					String isbnLibroModifica = scanner.nextLine();
@@ -232,6 +234,7 @@ public class Main2 {
 						System.out.println("Nessun libro trovato con il codice ISBN (ID) specificato");
 					}
 
+					// MODIFICO LE RIVISTE
 				} else if (sceltaModifica == 2) {
 					System.out.print("Inserisci l'ID della rivista da modificare: ");
 					String isbnRivistaModifica = scanner.nextLine();

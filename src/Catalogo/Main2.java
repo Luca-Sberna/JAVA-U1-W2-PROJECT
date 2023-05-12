@@ -37,6 +37,7 @@ public class Main2 {
 			// PER IL CASO 5 DELLA RICERCA DEI LIBRI GRAZIE AL NOME DELL'AUTORE.
 			// E L'AGGIUNTA DI UN CASO PER LA MODIFICA.
 			switch (scelta) {
+			// CASO 1
 			case 1:
 				System.out.print("Inserisci il codice ISBN: ");
 				String isbnLibro = scanner.nextLine();
@@ -82,6 +83,7 @@ public class Main2 {
 				archivio.aggiungiElemento(libro);
 				break;
 
+			// CASO 2
 			case 2:
 				System.out.print("Inserisci l'ID personalizzabile dalla rivista: ");
 				String isbnRivista = scanner.nextLine();
@@ -124,6 +126,7 @@ public class Main2 {
 				archivio.aggiungiElemento(rivista);
 				break;
 
+			// CASO 3
 			case 3:
 				System.out.print("Inserisci il codice ISBN dell'elemento da rimuovere: ");
 				String isbnRimuovi = scanner.nextLine();
@@ -137,6 +140,7 @@ public class Main2 {
 				}
 				break;
 
+			// CASO 4
 			case 4:
 				System.out.print("Inserisci il codice ISBN: ");
 				String isbn = scanner.nextLine();
@@ -151,6 +155,7 @@ public class Main2 {
 				}
 				break;
 
+			// CASO 5
 			case 5:
 				System.out.print("Inserisci l'autore da cercare: ");
 				String autoreCerca = scanner.nextLine();
@@ -165,6 +170,7 @@ public class Main2 {
 				}
 				break;
 
+			// CASO 6
 			case 6:
 				System.out.println("Elementi del catalogo: ");
 				for (ElementoCatalogo elemento : archivio.getElementiCatalogo()) {
@@ -174,6 +180,7 @@ public class Main2 {
 				}
 				break;
 
+			// CASO 7
 			case 7:
 				System.out.println("Vuoi modificare un libro o una rivista? (1 per libro, 2 per rivista)");
 				int sceltaModifica = scanner.nextInt();
@@ -281,6 +288,7 @@ public class Main2 {
 				}
 				break;
 
+			// CASO 8
 			case 8:
 				System.exit(0);
 				System.out.println("Chiusura dell'app dei cataloghi...");

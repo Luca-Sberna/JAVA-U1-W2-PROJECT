@@ -6,7 +6,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Archivio {
 	private List<ElementoCatalogo> elementiCatalogo;
@@ -34,8 +33,7 @@ public class Archivio {
 	}
 
 	public List<ElementoCatalogo> ricercaPerAnnoPubblicazione(int annoPubblicazione) {
-		return elementiCatalogo.stream().filter(e -> e.annoPubblicazione == annoPubblicazione)
-				.collect(Collectors.toList());
+		return elementiCatalogo.stream().filter(e -> e.annoPubblicazione == annoPubblicazione).toList();
 	}
 
 	public List<Libro> ricercaPerAutore(String autore) {

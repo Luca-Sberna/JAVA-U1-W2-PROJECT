@@ -1,7 +1,10 @@
 package Catalogo;
 
-public class ElementoCatalogo {
-	protected String codiceIsbn;
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class ElementoCatalogo implements Serializable {
+	protected  String codiceIsbn;
 	protected String titolo;
 	protected int annoPubblicazione;
 	protected int numeroPagine;
@@ -12,4 +15,5 @@ public class ElementoCatalogo {
 		this.annoPubblicazione = annoPubblicazione;
 		this.numeroPagine = numeroPagine;
 	}
+
 }

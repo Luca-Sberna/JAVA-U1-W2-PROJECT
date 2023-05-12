@@ -1,8 +1,11 @@
 package Catalogo;
 
-public class Libro extends ElementoCatalogo {
-	private String autore;
-	private String genere;
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class Libro extends ElementoCatalogo implements Serializable {
+	String autore;
+	String genere;
 
 	public Libro(String codiceIsbn, String titolo, int annoPubblicazione, int numeroPagine, String autore,
 			String genere) {

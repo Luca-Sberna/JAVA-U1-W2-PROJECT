@@ -1,11 +1,14 @@
 package Catalogo;
 
-public class Rivista extends ElementoCatalogo {
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class Rivista extends ElementoCatalogo implements Serializable {
 	private String periodicità;
 
 	public Rivista(String codiceIsbn, String titolo, int annoPubblicazione, int numeroPagine, String periodicità) {
 		super(codiceIsbn, titolo, annoPubblicazione, numeroPagine);
-		this.setPeriodicità(periodicità);
+		this.periodicità = periodicità;
 	}
 
 	public String getPeriodicità() {
